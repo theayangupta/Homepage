@@ -1,0 +1,47 @@
+body {
+    background-color: #F7F6F2;
+}
+
+button {
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 4px;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+#copyright-details {
+    bottom: 10px;
+    font-weight: 500;
+    position: absolute;
+    right: 6px;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+.one {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.two {
+    text-align: center;
+}
+
+
+
+
