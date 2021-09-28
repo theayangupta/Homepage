@@ -39,5 +39,16 @@ document.getElementById('inc').onclick = function() {
     colorChange();
 }
 
+var text, parser, xmlDoc;
 
+text = "<copyright>" +
+"<Name>Ayan Gupta</Name>" +
+"<GitHub>github.com/theayangupta</GitHub>" +
+"<br>" +
+"</copyright>";
 
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("copyright-details").innerHTML =
+xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue + "<br>" + xmlDoc.getElementsByTagName("GitHub")[0].childNodes[0].nodeValue;
